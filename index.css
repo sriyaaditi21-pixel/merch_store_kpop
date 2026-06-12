@@ -1,0 +1,190 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#121212;
+  color:white;
+  font-family:Arial,sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+  background:#1e1e1e;
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:2px solid hotpink;
+}
+
+.navbar h1{
+  color:hotpink;
+}
+
+.nav-buttons button{
+  margin:5px;
+}
+
+/* CONTROLS */
+
+.controls{
+  text-align:center;
+  padding:20px;
+}
+
+.controls input{
+  padding:10px;
+  width:250px;
+  border-radius:8px;
+  border:none;
+  margin-right:10px;
+}
+
+.controls button{
+  padding:10px;
+  margin:5px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* PRODUCTS */
+
+.products{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card{
+  width:260px;
+  background:#1e1e1e;
+  margin:15px;
+  padding:15px;
+  border-radius:15px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.card h3{
+  margin-top:10px;
+}
+
+.card h4{
+  color:hotpink;
+  margin:10px 0;
+}
+
+.card button{
+  background:hotpink;
+  color:white;
+  border:none;
+  padding:10px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* CART */
+
+.cart-page{
+  padding:30px;
+}
+
+.cart-item{
+  display:flex;
+  gap:20px;
+  background:#1e1e1e;
+  padding:15px;
+  margin-bottom:20px;
+  border-radius:12px;
+}
+
+.cart-item img{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.qty-controls{
+  margin-top:10px;
+}
+
+.qty-controls button{
+  padding:5px 12px;
+  margin:5px;
+}
+
+.remove-btn{
+  margin-top:10px;
+  background:red;
+  color:white;
+  border:none;
+  padding:8px;
+  border-radius:8px;
+}
+
+/* CHECKOUT */
+
+.checkout-page{
+  padding:30px;
+}
+
+.checkout-form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+.checkout-form input,
+.checkout-form textarea{
+  margin:10px 0;
+  padding:12px;
+  border:none;
+  border-radius:8px;
+}
+
+.checkout-form button{
+  padding:12px;
+  background:hotpink;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.active{
+  background:hotpink;
+  color:white;
+}
+
+.controls button{
+  background:#2a2a2a;
+  color:white;
+  transition:0.3s;
+}
+
+.controls button:hover{
+  background:hotpink;
+}
+
+.controls input:focus{
+  outline:none;
+  border:2px solid hotpink;
+}
